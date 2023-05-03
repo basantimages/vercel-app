@@ -49,7 +49,7 @@ app.get('/brs/data', async (req, res) => {
       .get(url, { headers })
       .then((response) => {
         console.log("resABC");
-        res.text(response.data);
+        res.json(response.data.user);
       })
       .catch((error) => {
         console.error(error);
