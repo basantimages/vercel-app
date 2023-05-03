@@ -48,7 +48,7 @@ app.get('/brs/data', async (req, res) => {
     axios
       .get(url, { headers })
       .then((response) => {
-        console.log(response.data);
+        console.log("resABC",response);
         res.json(response.data);
       })
       .catch((error) => {
