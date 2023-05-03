@@ -2,7 +2,8 @@ import cors from 'cors';
 import express from 'express';
 import fetch from 'node-fetch';
 import ProxyAgent from 'proxy-agent';
-import { getProxies } from 'proxy-chain';
+import pkg from 'proxy-chain';
+const { getProxies } = pkg;
 
 const app = express();
 app.use(express.json());
