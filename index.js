@@ -19,7 +19,7 @@ app.post('/brs/data', async (req, res) => {
 
 app.get('/brs/data', async (req, res) => {
   try {
-    const response = await fetch(`https://www.instagram.com/${req.body.input}/?__a=1&__d=dis`);
+    const response = await fetch(`https://www.instagram.com/hello/?__a=1&__d=dis`);
     const resp = await response.json();
     console.log(resp);
     res.json(resp);
