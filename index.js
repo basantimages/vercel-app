@@ -29,7 +29,7 @@ app.use((_, res, next) => {
 
 app.post('/brs/data', async (req, res) => {
   try {
-    const url = `https://i.instagram.com/api/v1/users/web_profile_info/?username=${req.body.input}`;
+    const url = `https://i.instagram.com/api/v1/users/web_profile_info/?username=hello`;
 
     axios
       .get(url, { headers })
