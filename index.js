@@ -4,7 +4,9 @@ import fetch from 'node-fetch';
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+ origin:'https://vercel-app-ruby.vercel.app' 
+}));
 
 app.post('/brs/data', async (req, res) => {
   try {
